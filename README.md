@@ -1,4 +1,4 @@
-"# GraphQl-Authentication" 
+"# GraphQl-Authentication  Graphene-Django" 
 
 pip install -r requirement.txt
 
