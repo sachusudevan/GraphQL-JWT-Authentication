@@ -17,30 +17,30 @@ python manage.py runserver
          Register
 ============================
 
-mutation
-{
-  register(input:{email:"",username:"",password1:"",password2:""})
-	{
-    success
-    errors
-    token
-    refreshToken
-  }
-}
+        mutation
+        {
+        register(input:{email:"",username:"",password1:"",password2:""})
+            {
+            success
+            errors
+            token
+            refreshToken
+        }
+        }
 
 
 
          Verify Token
 ===============================
 
-mutation{
-  verifyToken(input:{token:""})
-  {
-    success
-    errors
-    __typename
-  }
-}
+        mutation{
+        verifyToken(input:{token:""})
+        {
+            success
+            errors
+            __typename
+        }
+        }
 
 
 
@@ -48,21 +48,21 @@ mutation{
 ===============================
 
 
-query{
-  users{
-    edges{
-      node{
-        id
-        username
-        email
-        isStaff
-        isSuperuser
-        firstName
-        lastName
-        lastName
-        isActive
-        lastLogin
-      }
-    }
-  }
-}
+        query{
+        users{
+            edges{
+            node{
+                id
+                username
+                email
+                isStaff
+                isSuperuser
+                firstName
+                lastName
+                lastName
+                isActive
+                lastLogin
+            }
+            }
+        }
+        }
